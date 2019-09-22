@@ -1,0 +1,30 @@
+
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li.menu {
+  float: left;
+}
+
+li a.menu {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a.menu:hover {
+  background-color: #111;
+}
+
+div.foot {
+  background-color: #b3c6ff;
+  width: 1000px;
+  height: 200px;
+  align: center;
+}
