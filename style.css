@@ -31,7 +31,7 @@ img.header{
 }
 .logo{
   float: left;
-  max-height: 50px;
+  max-height: 70px;
   border-radius: 25px 25px 25px 25px;
   padding-bottom: 15px;
 }
@@ -40,9 +40,20 @@ img.logo{
   object-fit: scale-down;
 }
 
+.account{
+  float: right;
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+img.account{
+  object-fit: scale-down;
+}
+
 .cart{
   float: right;
   max-height: 50px;
+  margin-right: 10px;
 }
 
 img.cart{
