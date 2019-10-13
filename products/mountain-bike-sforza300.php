@@ -12,7 +12,7 @@
     <table class="tableGoods">
       <tbody>
       <?php
-        $bikeQuery = "SELECT ProductId, ProductsName, Price, ImagePath, Description, Link FROM t8qugi00.Products join t8qugi00.Categories on Products.CategoryId = Categories.CategoryId WHERE CategoryName = 'bike';";
+        $bikeQuery = "SELECT ProductsName, Price, ImagePath, Description FROM t8qugi00.Products join t8qugi00.Categories on Products.CategoryId = Categories.CategoryId WHERE CategoryName = 'bike';";
         
         if($result = mysqli_query($connection, $bikeQuery))
         {
@@ -20,16 +20,16 @@
           echo "<tr>";
           while($obj = mysqli_fetch_object($result))
           {
-            if($colNro == 4)
+            if($colNro == 3)
             {
               echo "</tr>";
               echo "<tr>";
-              $colNro = 1;
+              $colNro = 0;
             }
             else {
               echo "<td class='tableGoods'>";
-              echo "<a href='detail.php?id=" . $obj->ProductId . "'><img class='tableGoods' src=". $obj->ImagePath ." /></a>";
-              echo "<p class='tableGoods' href='products/" . $obj->Link . "' align='bottom'>". $obj->ProductsName . " € " . $obj->Price ."</p>";
+              echo "<img class='tableGoods' alt=" . $obj->ProductsName ." src=". $obj->ImagePath ." />";
+              echo "<p class='tableGoods' align='bottom'>". $obj->ProductsName . " " . $obj->Price ."</p>";
               echo "</td>";
               $colNro++;
             }
@@ -44,3 +44,4 @@
     <?php include "footer.php" ?>
   </div>
   </body>
+

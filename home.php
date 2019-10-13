@@ -10,10 +10,10 @@
     <div class="allPage">
       <div class="header">
         <p><img alt="header" src="images\header1.jpg" /></p><br>
-        <span class="logo" href="home.html"><img class="logo" alt="welcome" src="images\logoa.jpg"/></span>
+        <a href="home.php"><span class="logo" ><img class="logo" alt="welcome" src="images\logoa.jpg"/></span></a>
         <span class="welcome">Welcome!! Please take a look to our products </span>
-        <span class="account"><img class="account" href="login.php" alt="account" src="images\account.png"/></span>
-        <span class="cart"><img class="cart" href="cart.php" alt="cart" src="images\cart.png" /></span>
+        <a href="login.php"><span class="account"><img class="account" alt="account" src="images\account.png"/></span></a>
+        <a href="cart.php"><span class="cart"><img class="cart" alt="cart" src="images\cart.png" /></span></a>
       </div>
       <br>
     <div>
@@ -28,7 +28,7 @@
     </ul>
   </div>
   <br>
-  <?php include "connection.php"; ?>
+  <!--<?php include "connection.php"; ?>-->
     <table class="tableGoods">
     <tbody>
       <tr style="height: 0px;">

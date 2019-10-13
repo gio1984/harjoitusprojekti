@@ -1,7 +1,7 @@
 <footer>
   <div class="foot">
-    <p href="home.html">Home</p>
-    <p href="">About us</p>
-    <p href="">Contact</p>
+      <a href="home.php"><p>Home</p></a>
+      <a href="about.php"><p>About us</p></a>
+      <a href="contacts.php"><p>Contact</p></a>
   </div>
 </footer>
