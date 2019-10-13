@@ -11,7 +11,6 @@
 <li class="menu"><a href="home.php">Home</a></li>
 <li class="menu"><a href="bikes.php">Bike</a></li>
 <li class="menu"><a href="football.php">Football</a></li>
-<li class="menu"><a href="volley.php">Volley</a></li>
 <li class="menu"><a href="outdoor.php">Outdoor</a></li>
 <li class="menu"><a href="about.php">About us</a></li>
 <li class="menu"><a href="contact.php">Contact</a></li>

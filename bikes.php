@@ -12,7 +12,7 @@
     <table class="tableGoods">
       <tbody>
       <?php
-        $bikeQuery = "SELECT ProductId, ProductsName, Price, ImagePath, Description, Link FROM t8qugi00.Products join t8qugi00.Categories on Products.CategoryId = Categories.CategoryId WHERE CategoryName = 'bike';";
+        $bikeQuery = "SELECT ProductId, ProductsName, Price, ImagePath, Description FROM t8qugi00.Products join t8qugi00.Categories on Products.CategoryId = Categories.CategoryId WHERE CategoryName = 'bike';";
         
         if($result = mysqli_query($connection, $bikeQuery))
         {

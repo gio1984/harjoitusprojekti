@@ -23,9 +23,9 @@ if(isset($_GET['id'])){
     echo '<span>'. $obj->ProductsName .'</span><br><br>';
     echo '<span>' . $obj->Description . '</span><br><br>';
     echo '<span> € ' . $obj->Price . '</span><br><br>';
-    echo '<form action="addcart.php">';
-    echo '<input type="number" name="qty" value="1">';
-    echo '<input type="submit" value="Add to cart">';
+    echo '<form method="post" action="addcart.php?idProd='. $idProd.'">';
+    echo '<input type="number" name="qty" value="1"><br>';
+    echo '<input class="button" type="submit" value="Add to cart">';
     echo '</form>';
     echo '</div>';
     echo '</div>';

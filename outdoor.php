@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <title>Football</title>
+    <title>Outdoor</title>
   </head>
   <body>
       <div class="allPage">
@@ -12,9 +12,9 @@
     <table class="tableGoods">
       <tbody>
       <?php
-        $footballQuery = "SELECT ProductId, ProductsName, Price, ImagePath, Description FROM t8qugi00.Products join t8qugi00.Categories on Products.CategoryId = Categories.CategoryId WHERE CategoryName = 'football';";
+        $outdoorQuery = "SELECT ProductId, ProductsName, Price, ImagePath, Description FROM t8qugi00.Products join t8qugi00.Categories on Products.CategoryId = Categories.CategoryId WHERE CategoryName = 'outdoor';";
         
-        if($result = mysqli_query($connection, $footballQuery))
+        if($result = mysqli_query($connection, $outdoorQuery))
         {
           $colNro = 1;
           echo "<tr>";
